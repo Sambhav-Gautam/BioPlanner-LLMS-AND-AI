@@ -1,0 +1,28 @@
+digraph ImmuneCellIsolationProtocol {
+    // Define the title
+    Title [label="\"Immune Cell Isolation from Mouse Spleen\""];
+    
+    // Define steps
+    Step1 [label="1. Prepare 50mL of 10% FBS RPMI media"];
+    Step2 [label="2. Wet both sides of a 70μm filter with media above a 50mL conical (make sure there is some media in the conical)"];
+    Step3 [label="3. Place spleen on filter, use the plunger base of a syringe to mash the spleen onto the filter while pouring media through"];
+    Step4 [label="4. Continue pouring media through filter while mashing until spleen is completely mashed. About 30 to 35mL of media should be used"];
+    Step5 [label="5. Keep suspended cells on ice in the 10% FBS RPMI media until preparing for sort"];
+    Step6 [label="6. Spin cells down at 350g for 3 min (pulse to 550g if necessary)"];
+    Step7 [label="7. Remove supernatant"];
+    Step8 [label="8. Resuspend pellet in 1mL of ACK lysing buffer for 1 min on ice"];
+    Step9 [label="9. Add 30mL of media, spin down at 350g for 3 min (pulse to 550g if necessary)"];
+    Step10 [label="10. Stain with desired antibodies, filter with sorting filters, dilute if large pellet"];
+    
+    // Define edges (sequence of steps)
+    Title -> Step1;
+    Step1 -> Step2;
+    Step2 -> Step3;
+    Step3 -> Step4;
+    Step4 -> Step5;
+    Step5 -> Step6;
+    Step6 -> Step7;
+    Step7 -> Step8;
+    Step8 -> Step9;
+    Step9 -> Step10;
+}

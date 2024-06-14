@@ -1,0 +1,46 @@
+digraph WesternBlotProtocol {
+    // Define the title
+    Title [label="\"Western Blot\""];
+    
+    // Define steps
+    Step1 [label="1. Assemble gel polymerizing station according to manufacturer\u2019s protocol."];
+    Step2 [label="2. To create a running gel:\n   a. 2.4 mL dH2O\n   b. 1.5 mL 1.5M Tris HCl pH 8.8\n   c. 2 mL 30% Acrylamide/Bis solution (Bio-Rad)\n   d. 60 \u00b5L 10% SDS\n   e. 60 \u00b5L 10% APS (freshly made)\n   f. 6 \u00b5L TEMED"];
+    Step3 [label="3. Pour into gel cassette and let polymerize."];
+    Step4 [label="4. To create a stacking gel:\n   a. 6.85 mL dH2O\n   b. 2.5 mL 0.5M Tris HCl pH 6.8\n   c. 1.3 mL 30% Acrylamide/Bis Solution (Bio-Rad)\n   d. 100 \u00b5L 10% SDS\n   e. 100 \u00b5L 10% APS\n   f. 10 \u00b5L TEMED"];
+    Step5 [label="5. Pour stacking gel on top of polymerized running gel into gel cassette. Insert gel comb into stacking gel and let polymerize."];
+    Step6 [label="6. After polymerization, remove gel comb to generate wells and transfer gel cassettes to gel running dock as per manufacturer\u2019s instructions. Fill empty compartments with 1X Running Buffer."];
+    Step7 [label="7. Dilute desired protein samples 1:1 with 2X SDS running buffer and load into gel. Add ladder if desired."];
+    Step8 [label="8. Allow to run at 140V for 1:30 hours or until dye front is no longer visible."];
+    Step9 [label="9. Fill a basin with methanol and a second basin with 1X Trans-Blot Turbo Transfer Buffer."];
+    Step10 [label="10. Let PVDF membrane sit in methanol for 2 minutes, then transfer to transfer buffer basin with foam pads. Let sit for 2 minutes."];
+    Step11 [label="11. Assemble transfer according to manufacturer\u2019s protocol."];
+    Step12 [label="12. Transfer proteins from polyacrylamide gel to PVDF membrane using Turbo-Blot Transfer System."];
+    Step13 [label="13. Block 1 hour in 5% Milk."];
+    Step14 [label="14. Incubate overnight with primary antibody in 5% milk."];
+    Step15 [label="15. Wash 3 times with TBS-Tween."];
+    Step16 [label="16. Incubate for 1 hour with secondary antibody in 5% milk."];
+    Step17 [label="17. Wash 3 times with TBS-Tween."];
+    Step18 [label="18. Develop the blot by preparing the ECL developing solution. Add ~1mL of ECL solution to the membrane and allow to incubate for 2 minutes on each side."];
+    Step19 [label="19. Image using the Bio-Rad ChemiDoc Gel Imaging System."];
+    
+    // Define edges (sequence of steps)
+    Title -> Step1;
+    Step1 -> Step2;
+    Step2 -> Step3;
+    Step3 -> Step4;
+    Step4 -> Step5;
+    Step5 -> Step6;
+    Step6 -> Step7;
+    Step7 -> Step8;
+    Step8 -> Step9;
+    Step9 -> Step10;
+    Step10 -> Step11;
+    Step11 -> Step12;
+    Step12 -> Step13;
+    Step13 -> Step14;
+    Step14 -> Step15;
+    Step15 -> Step16;
+    Step16 -> Step17;
+    Step17 -> Step18;
+    Step18 -> Step19;
+}

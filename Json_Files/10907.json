@@ -1,0 +1,14 @@
+{
+    "id": "10907",
+    "protocols.io url": "https://www.protocols.io/view/10907",
+    "title": "Overnight Bacterial Batch Culture",
+    "original description": "Purpose of this protocol is to grow up single colonies of bacteria for use.",
+    "steps": "\n\n1. Pipette 5 mL of LB Broth into bacterial culture tube.\n2. Add desired antibiotic at appropriate concentration (often 1:1000).\n3. Pick single colony/scrape glycerol stock and inoculate LB Broth.\n4. Incubate batch culture overnight at 37\u00b0C, shaking.\n",
+    "total protocol length in tokens": 87,
+    "original description length in tokens": 15,
+    "number of steps": 4,
+    "ai_generated_description": "The objective of this overnight bacterial batch culture protocol is to grow single colonies of bacteria in LB Broth for further use in molecular biology experiments. This is done by inoculating the broth with a single bacterial colony or a glycerol stock and incubating it overnight at 37\u00b0C with shaking for proper aeration and growth.",
+    "ai_generated_description length in tokens": 65,
+    "generated_pseudocode": "def prepare_lb_broth(volume): pass\ndef add_antibiotic(antibiotic_concentration): pass\ndef inoculate_broth(source, inoculum_type): pass\ndef incubate_overnight(temperature, shaking_speed): pass\n\n# Protocol steps\nprepare_lb_broth(volume=\"5 mL\")\nadd_antibiotic(antibiotic_concentration=\"1:1000\")\ninoculate_broth(source=\"single colony/glycerol stock\", inoculum_type=\"LB Broth\")\nincubate_overnight(temperature=37, shaking_speed=\"shaking\")\n# end of protocol",
+    "edited_pseudocode": null
+}

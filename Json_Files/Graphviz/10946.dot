@@ -1,0 +1,26 @@
+digraph ProteinExtractionProtocol {
+    // Define the title
+    Title [label="\"Protein extraction from aortas or VSMCs for Western blot\""];
+    
+    // Define steps
+    Step1 [label="1. Thaw frozen aorta in a 37°C waterbath, mince on ice, and pool aortas from 3-4 mice in a single microtube.\nFor VSMCs, wash cells with phosphate-buffered saline (PBS) three times, aspirate the PBS thoroughly."];
+    Step2 [label="2. Prepare SMAD lysis buffer:\n- 10 mM Tris-HCl pH 7.6\n- 1% Triton X-100\n- 100 mM NaCl\n- 2 mM EDTA\n- 10% v/v glycerol\n- 50 mM NaF\n- 20 mM Na4P207\n- 2 mM Na3VO4\n- 1x protease inhibitor cocktail (Nacalai Tesque)"];
+    Step3 [label="3. Lyse pooled minced aortas or VSMCs in 100 or 150 µL lysis buffer for each microtube (around 30 mg tissue) or 35 mm dish, respectively."];
+    Step4 [label="4. Use a homogenizer (for aortas) followed by a sonicator to further lyse the tissue.\nUse a sonicator to process VSMC samples."];
+    Step5 [label="5. Centrifuge 15,000 x g for 10 min at 4°C."];
+    Step6 [label="6. Transfer supernatant into a new microtube."];
+    Step7 [label="7. Measure protein concentration using Pierce 660nm Protein Assay Reagent. Make a BSA standard curve as well to plot the absorbance into the concentration value."];
+    Step8 [label="8. Add 5x SDS loading dye, boil at 95°C for 3-5 min."];
+    Step9 [label="9. Store at -20°C until used."];
+
+    // Define edges (sequence of steps)
+    Title -> Step1;
+    Step1 -> Step2;
+    Step2 -> Step3;
+    Step3 -> Step4;
+    Step4 -> Step5;
+    Step5 -> Step6;
+    Step6 -> Step7;
+    Step7 -> Step8;
+    Step8 -> Step9;
+}

@@ -1,0 +1,36 @@
+digraph EcoliHeatShockTransformation {
+    // Define the title
+    Title [label="\"E. coli Heat Shock Transformation\""];
+    
+    // Define steps
+    Step1 [label="1. Thaw competent cells on ice. This takes about 10 minutes. Also thaw the plasmid to be transformed."];
+    Step2 [label="2. Warm SOC media to room temperature."];
+    Step3 [label="3. Heat a dry block to 42\u00baC, a shaker-incubator to 37\u00baC, and a cabinet-style incubator to 37\u00baC."];
+    Step4 [label="4. Label a 1.5mL eppendorf tube for each transformation reaction with the construct name and place it on ice. Label an agar plate with the construct, date, your initials, and plate media type (with antibiotic, if applicable)."];
+    Step5 [label="5. Add plasmid to the labeled eppendorf tube on ice."];
+    Step6 [label="6. Add thawed competent cells to the tube with the plasmid and gently swirl with the pipet tip to mix."];
+    Step7 [label="7. Incubate the mixture on ice for 30 minutes."];
+    Step8 [label="8. Place the mixture in the dry block at 42\u00baC for 30 seconds"];
+    Step9 [label="9. Incubate the mixture on ice for 2 minutes."];
+    Step10 [label="10. Add SOC to the mixture and shake in an incubator."];
+    Step11 [label="11. (Optional) Spin the bacterial broth for 30 seconds at 6000 rpm, remove 180\u00b5L of supernatant, and gently resuspend the pellet in the remaining media to concentrate."];
+    Step12 [label="12. Immerse a plate spreader in 70% ethanol to sterilize and then burn off the excess alcohol."];
+    Step13 [label="13. Pipet at least 100\u00b5L of the broth onto the labeled agar plate and spread it evenly across the surface of the agar with the sterile spreader. Resterilize the spreader."];
+    Step14 [label="14. Place the prepared plate (lid-down) into a 37\u00baC incubator overnight (16 hours)."];
+
+    // Define edges (sequence of steps)
+    Title -> Step1;
+    Step1 -> Step2;
+    Step2 -> Step3;
+    Step3 -> Step4;
+    Step4 -> Step5;
+    Step5 -> Step6;
+    Step6 -> Step7;
+    Step7 -> Step8;
+    Step8 -> Step9;
+    Step9 -> Step10;
+    Step10 -> Step11;
+    Step11 -> Step12;
+    Step12 -> Step13;
+    Step13 -> Step14;
+}

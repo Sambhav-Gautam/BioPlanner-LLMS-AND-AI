@@ -1,0 +1,16 @@
+digraph AgaroseGelProtocol {
+    // Define the title
+    Title [label="\"0.8% Agarose Gel\""];
+    
+    // Define steps
+    Step1 [label="1. Add 100 mL of 1X TAE Buffer to 0.8 g of UltraPure Agarose and a few grains of guanosine."];
+    Step2 [label="2. Microwave for 1 minute in conventional microwave, swirling at 30 seconds."];
+    Step3 [label="3. Allow to cool until it is not painful to touch and add 6 uL of Ethidium Bromide."];
+    Step4 [label="4. Pour into gel dock with comb and allow to solidify."];
+    
+    // Define edges (sequence of steps)
+    Title -> Step1;
+    Step1 -> Step2;
+    Step2 -> Step3;
+    Step3 -> Step4;
+}

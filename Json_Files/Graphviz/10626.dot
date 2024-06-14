@@ -1,0 +1,30 @@
+digraph CellIsolationProtocol {
+    // Define the title
+    Title [label="\"Isolating Specific Cell Subsets Directly from Whole Blood Without Columns or Magnets\""];
+    
+    // Define steps
+    Step1 [label="1. Ensure that the blood sample, PBS + 2% FBS, density gradient medium, and centrifuge are all at room temperature (15 - 25°C)."];
+    Step2 [label="2. Add RosetteSep™ cocktail to the sample and mix well."];
+    Step3 [label="3. Incubate 20 minutes at room temperature."];
+    Step4 [label="4. Dilute sample with an equal volume of PBS + 2% FBS and mix gently."];
+    Step5 [label="5. Layer the diluted sample on top of the density gradient medium using the recommended volumes. Be careful to minimize mixing of the density gradient medium and the sample."];
+    Step6 [label="6. Centrifuge at 1200 x g for 20 minutes at room temperature, with the brake off."];
+    Step7 [label="7. Remove the enriched cells from the density gradient medium:plasma interface."];
+    Step8 [label="8. Sometimes it is difficult to see cells at the interface, especially when very rare cells are enriched. To maximize recovery in these instances, remove some of the density gradient medium along with the enriched cells."];
+    Step9 [label="9. Wash enriched cells with PBS + 2% FBS, centrifuge at 300 x g for 10 min, with brake on low. Discard supernatant. (1/2)"];
+    Step10 [label="10. Wash enriched cells with PBS + 2% FBS, centrifuge at 300 x g for 10 min, with brake on low. Discard supernatant. (2/2)"];
+    Step11 [label="11. Use enriched cells as desired."];
+    
+    // Define edges (sequence of steps)
+    Title -> Step1;
+    Step1 -> Step2;
+    Step2 -> Step3;
+    Step3 -> Step4;
+    Step4 -> Step5;
+    Step5 -> Step6;
+    Step6 -> Step7;
+    Step7 -> Step8;
+    Step8 -> Step9;
+    Step9 -> Step10;
+    Step10 -> Step11;
+}

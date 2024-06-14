@@ -1,0 +1,30 @@
+digraph FlowCytometry {
+    // Define the title
+    Title [label="Flow Cytometry V.2"];
+    
+    // Define steps for the protocol
+    Step1 [label="1. Inoculate single colony of freshly transformed DH5α or TOP10 cells in 4 ml LB medium containing 50 μg/ml chloramphenicol (or appropriate antibiotic)."];
+    Step2 [label="2. Grow the culture overnight at 37°C with shaking (250 rpm)."];
+    Step3 [label="3. Next day re-inoculate the cultures into 4 ml fresh LB medium having antibiotics and varying inducer concentrations.\nInducer concentrations can be varied from 0-1mM of IPTG or 0-200 ng/ml aTc."];
+    Step4 [label="4. Collect the samples at different time intervals of 3, 6, and 9 hours."];
+    Step5 [label="5. Monitor the growth rate by measuring optical density at 600 nm."];
+    Step6 [label="6. Measure the fluorescence in a Becton Dickinson FACS Calibur flow cytometer equipped with a 488 nm argon laser and a 515-545 nm emission filter (FL-1) and a 585-610 nm emission filter (FL-2)."];
+    Step7 [label="7. To measure the fluorescence, add 3-5 μl of the growing culture in ~1 ml PBS (phosphate buffer saline, pH-7.5)."];
+    Step8 [label="8. Measurement should be done at low flow rate (~1000 events/second)."];
+    Step9 [label="9. For each sample, collect 50,000 events."];
+    Step10 [label="10. Analyze the fluorescence in both FL-1 and FL-2 channel using FlowJo software (BD Biosciences)."];
+    Step11 [label="11. Determine the background fluorescence by using controls (cells having empty plasmid vector)."];
+    
+    // Define edges to represent the flow of the protocol
+    Title -> Step1;
+    Step1 -> Step2;
+    Step2 -> Step3;
+    Step3 -> Step4;
+    Step4 -> Step5;
+    Step5 -> Step6;
+    Step6 -> Step7;
+    Step7 -> Step8;
+    Step8 -> Step9;
+    Step9 -> Step10;
+    Step10 -> Step11;
+}

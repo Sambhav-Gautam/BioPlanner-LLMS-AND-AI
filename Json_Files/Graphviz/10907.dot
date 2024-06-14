@@ -1,0 +1,16 @@
+digraph OvernightBacterialBatchCulture {
+    // Define the title
+    Title [label="\"Overnight Bacterial Batch Culture\""];
+    
+    // Define steps
+    Step1 [label="1. Pipette 5 mL of LB Broth into bacterial culture tube."];
+    Step2 [label="2. Add desired antibiotic at appropriate concentration (often 1:1000)."];
+    Step3 [label="3. Pick single colony/scrape glycerol stock and inoculate LB Broth."];
+    Step4 [label="4. Incubate batch culture overnight at 37°C, shaking."];
+    
+    // Define edges (sequence of steps)
+    Title -> Step1;
+    Step1 -> Step2;
+    Step2 -> Step3;
+    Step3 -> Step4;
+}

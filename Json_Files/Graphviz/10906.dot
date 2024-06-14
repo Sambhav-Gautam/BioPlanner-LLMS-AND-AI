@@ -1,0 +1,24 @@
+digraph CloningProtocol {
+    // Define the title
+    Title [label="\"Cloning\""];
+    
+    // Define steps
+    Step1 [label="1. PCR amplification of gene of interest. Primers were designed for specific genes synthesized via IDT synthesis containing appropriate restriction enzyme cut sites (either for insertion into biobrick or into pET26b vector). Phusion polymerase (NEB) was used for all PCR amplifications and the manufacturer’s protocols were followed, adjusting extension time and melting temperature as each individual PCR required."];
+    Step2 [label="2. PCR products were run through a 0.8% agarose gel at 110V for 30-40 minutes and gel extracted if successful. Gel extraction was carried out using QiaQuick Gel Extraction Kit following the manufacturer’s protocol."];
+    Step3 [label="3. Both the insert and backbone were digested with the appropriate restriction enzymes following gel extraction using the following reaction conditions:\n• 2.5 uL Appropriate buffer (almost always CutSmart)\n• 0.5 uL Restriction Enzyme 1 (repeat if multiple enzymes)\n• 9 uL gel extraction of insert or 1 µg of miniprepped backbone\n• Up to 25 µL Nuclease Free Water\nDigested at 37°C for 1.5 hours then heat-killed at 80°C for 20 minutes."];
+    Step4 [label="4. After digestion, backbone was run through a 0.8% agarose gel and gel extracted as before. Insert was PCR purified according to manufacturer’s protocol (Qiagen QiaQuick PCR Purification Kit)."];
+    Step5 [label="5. Insert and backbone were ligated under the following conditions:\na. 2 µL T4 DNA Ligase Buffer\nb. 15 µL Purified Insert\nc. 2 µL backbone\nd. 1 µL T4 DNA Ligase\nLeft at room temperature overnight to ligate."];
+    Step6 [label="6. Ligation was then transformed into either STBL3 or BL21 DE3 E. coli as described in heat-shock transformation protocol and grown overnight as described in overnight batch culture protocol."];
+    Step7 [label="7. Batch cultures were miniprepped using Qiagen QiaPrep Miniprep Kit, following manufacturer’s instructions and quantified using a spectrophotometer."];
+    Step8 [label="8. ~500 ng of miniprep was linearized using a single cutting restriction enzyme as described before and run through a 0.8% agarose gel as before to confirm positive size (ie. insert+backbone). If successful, sample was sent to GeneWiz for sequencing following the company protocol for sequencing submission."];
+    
+    // Define edges (sequence of steps)
+    Title -> Step1;
+    Step1 -> Step2;
+    Step2 -> Step3;
+    Step3 -> Step4;
+    Step4 -> Step5;
+    Step5 -> Step6;
+    Step6 -> Step7;
+    Step7 -> Step8;
+}

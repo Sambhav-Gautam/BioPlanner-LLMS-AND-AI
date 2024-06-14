@@ -1,0 +1,50 @@
+digraph AgaroseGelElectrophoresis {
+    // Define the title
+    Title [label="1% Agarose Gel Electrophoresis Prep"];
+    
+    // Define steps for Gel Prep
+    GelPrep [label="Gel Prep"];
+    Step1 [label="1. Weigh out 2.5g of powdered agarose."];
+    Step2 [label="2. Add 250mL of 1XTAE buffer to a 1.0L Erlenmeyer flask.\nNote: Be mindful to use best practices when making solutions. Make sure the glassware is clean and pre-rinsed with 1XTAE buffer."];
+    Step3 [label="3. Add the pre-weighed 2.5g of agarose to the 1XTAE in the 1.0L Erlenmeyer.\nSAFETY Note: DO NOT OVERFILL THE FLASK! This solution will be heated and is subject to boiling when agitated. Ensure proper protective equipment."];
+    Step4 [label="4. Using a microwave, heat the agarose and buffer for 45 seconds. Remove the flask and swirl. Use caution as the solution will be hot."];
+    Step5 [label="5. Continue to heat the solution in 30 second increments until it starts to boil. Cautiously swirl the solution to ensure all agarose has dissolved properly."];
+    Step6 [label="6. Allow solution to cool at room temperature."];
+    Step7 [label="7. While the agarose solution is cooling, ensure all equipment is clean and ready for use.\nNote: 1) Pay special attention to the comb. Ensure all residue from previous gels is removed. 2) Fill the BioRad rig with 1XTAE Buffer. Add enough to fill both chambers and just cover bridge between them. 3) Clean the gel tray by wiping it down with distilled water, followed by 95% ethanol. 4) Set up the gel-casting tray; ensure a proper seal between the rubber gaskets and the open end of the gel tray."];
+    Step8 [label="8. Once the flask is warm to the touch, but does not induce pain with sustained gloved-hand contact, add 5 µL of SybrSafe to the flask and swirl gently. Avoid adding bubbles to the solution.\nNote: Do not add SybrSafe too early as it is denatured at high temperatures."];
+    Step9 [label="9. Carefully pour the agarose solution into the gel-casting tray. Avoid creating bubbles.\nNotes: 1) If bubbles are created, pop them with a clean pipette tip, or move them to the edge of the plate. 2) Place the comb into the second or third slot from the top of the gel tray and allow the gel to set."];
+
+    // Define steps for Sample Prep
+    SamplePrep [label="Sample Prep"];
+    Step10 [label="10. While the gel polymerizes, transfer 10 µL of sample into a clean strip-tube and add 2 µL of 6X loading dye to each sample. Vortex to mix and spin down."];
+
+    // Define steps for Loading Gel
+    LoadingGel [label="Loading Gel"];
+    Step11 [label="11. Once the gel has solidified, slowly and carefully remove the comb."];
+    Step12 [label="12. Transfer the gel and tray to the BioRad rig, orienting the wells closest to the black electrodes."];
+    Step13 [label="13. Top up the buffer in the rig if needed. Approximately 2mm of 1XTAE should stand above the gel."];
+    Step14 [label="14. Load 12 µL of sample and 3 µL ladder to their respective wells."];
+    Step15 [label="15. Match up the black and red electrodes on the BioRad lid with those on the base.\nNote: The chamber with the positive charge should be oriented at the bottom of the gel!"];
+    Step16 [label="16. Plug the electrode lead into the machine and run at 130mV for 30 mins, checking the progress every 10-15 minutes."];
+    
+    // Define edges to represent the flow of the protocol
+    Title -> GelPrep;
+    GelPrep -> Step1;
+    Step1 -> Step2;
+    Step2 -> Step3;
+    Step3 -> Step4;
+    Step4 -> Step5;
+    Step5 -> Step6;
+    Step6 -> Step7;
+    Step7 -> Step8;
+    Step8 -> Step9;
+    Step9 -> SamplePrep;
+    SamplePrep -> Step10;
+    Step10 -> LoadingGel;
+    LoadingGel -> Step11;
+    Step11 -> Step12;
+    Step12 -> Step13;
+    Step13 -> Step14;
+    Step14 -> Step15;
+    Step15 -> Step16;
+}

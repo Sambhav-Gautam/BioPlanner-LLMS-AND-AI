@@ -1,0 +1,18 @@
+digraph CountingCellsWithHemocytometer {
+    // Define the title
+    Title [label="\"Counting Cells with Hemocytometer\""];
+    
+    // Define steps
+    Step1 [label="1. Collect cell suspension\nCell suspension must be in a known volume. Adherent cells can be detached by methods appropriate for your particular cell line."];
+    Step2 [label="2. Dilute an aliquot of cells in Trypan Blue\nUse a 1:10 dilution for many cells, 1:2 dilution if working with fewer cells\nNeed a total volume of 10ul; Can do 10ul of cell suspension into 90ul Trypan Blue (1:10) to ensure plenty of excess cells and limit pipetting errors associated with pipetting volumes less than 10 ul"];
+    Step3 [label="3. Add cells to hemocytometer\nUsing a P10 micropipette, transfer 10ul of cell suspension + Trypan Blue under the cover slip on a hemocytometer"];
+    Step4 [label="4. Count Cells\nObserve the hemocytometer under the compound microscope\nCount the cells within the squares\nCount cells on 2 of the 4 perimeter lines\nOnly count live (non-blue) cells\nValid counts should include at least 50 cells"];
+    Step5 [label="5. Calculate cell concentration\nCells/mL = (Cell count)/(number of chambers counted) x dilution x 10^4\nEX: If you diluted your cells 1:10 in trypan blue, counted chambers 1 and 4, and counted a total of 150 cells:\n150/2 = 75 x 10 x 10^4 = 7.5 x 10^6 cells/mL\nNOTE: Concentration (cells/mL) x total volume (mL) = total number of cells"];
+
+    // Define edges (sequence of steps)
+    Title -> Step1;
+    Step1 -> Step2;
+    Step2 -> Step3;
+    Step3 -> Step4;
+    Step4 -> Step5;
+}

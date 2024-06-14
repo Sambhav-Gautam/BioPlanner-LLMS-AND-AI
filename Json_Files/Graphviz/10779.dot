@@ -1,0 +1,38 @@
+digraph FlashFreezeFruitFliesProtocol {
+    // Define the title
+    Title [label="\"Flash Freeze Fruit Flies in Liquid Nitrogen\""];
+    
+    // Define steps
+    Step1 [label="1. When virgins are collected count how many are placed into each vial and write this on the outside of the vial."];
+    Step2 [label="2. Check virgin collection vials for larvae."];
+    Step3 [label="3. If no larvae present, consolidate by E# (cross identifier) into a single vial and write total number of flies for all vials corresponding to progeny from that cross of that type on the vial."];
+    Step4 [label="4. Create a spreadsheet that will record the information for all your samples and where they will be located in the freezer box and in the -80 freezer."];
+    Step5 [label="5. Before starting, check virgin collection vials for virginity a second time."];
+    Step6 [label="6. Pre-label freezer box with Experiment Title, Block # (if there are multiple blocks), Date, your name and email."];
+    Step7 [label="7. Pre-label Cryovials with V# (identifier for order vials are frozen in, starting @ 1), E # (cross identifier), sex, genotype, block #, and date; add the # of flies when you actually freeze. This information comes from your spreadsheet. You can use shorthand- but it should be explained longhand in your spreadsheet."];
+    Step8 [label="8. Put tape on bench to note the time tubes should be frozen (we allow flies 15 minutes to relax after being pounded through the funnel into the Cryovial)."];
+    Step9 [label="9. Get liquid Nitrogen before starting at 3 p.m. (or the time you have chosen ... this will be fixed for all your experiments) and put in a rectangular Styrofoam tub that is big enough to hold two freezer boxes. Remember all flies must be frozen in a 2 hour window."];
+    Step10 [label="10. If you are freezing Cryovials of multiple genotypes, arrange vials so that no one factor is grouped by time (aka have a few of each genotype frozen at the same time). The easiest way to do this is to freeze all the vials that correspond to the first replicate, then the second replicate and so on."];
+    Step11 [label="11. For large freezes, we generally have 2 or more people seated in front of the racks of vials and freeze them from left to right front to back (with each person putting the flies in the vials in their section into cryotubes)."];
+    Step12 [label="12. For freezes that do not use anesthetic- Select pre-labeled Cryovial and virgin vial, pound flies through funnel into Cryovial. Screw lid on loosely, but securely."];
+    Step13 [label="13. For freezes under CO2, knock-out flies, count them on the pad and sweep into the Cryovial. Screw lid on loosely, but securely."];
+    Step14 [label="14. Place Cryovial with flies in it on tape and note the time (we usually do this by grouping cryovials in 5 minute blocks) and in approx. 15 minutes place the cryovials in order by V number from left to right front to back directly into the freezer box that is sitting in liquid nitrogen. Make sure to do this quickly and that the vial is submerged. You can use tweezers to submerge the vial first to the side of the box and then put it in the right position in the box."];
+    Step15 [label="15. After you freeze them you can use the tweezers to rearrange them so that they are logical in terms of replicates and types or leave them in the freeze order. Whichever you do, you must make sure that your spreadsheet records where each cryovial is located in the box (A1 is the first slot, row A, column 1)."];
+    
+    // Define edges (sequence of steps)
+    Title -> Step1;
+    Step1 -> Step2;
+    Step2 -> Step3;
+    Step3 -> Step4;
+    Step4 -> Step5;
+    Step5 -> Step6;
+    Step6 -> Step7;
+    Step7 -> Step8;
+    Step8 -> Step9;
+    Step9 -> Step10;
+    Step10 -> Step11;
+    Step11 -> Step12;
+    Step12 -> Step13;
+    Step13 -> Step14;
+    Step14 -> Step15;
+}

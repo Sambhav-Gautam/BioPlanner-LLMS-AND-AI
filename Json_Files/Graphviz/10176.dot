@@ -1,0 +1,14 @@
+digraph PersonalityAssessment {
+    // Define the title
+    Title [label="Personality Assessment Protocol V.2"];
+    
+    // Define steps for the protocol
+    Step1 [label="1. Introduce the focal individual into a lateral shelter area (20 × 30 cm) of the testing tank. The shelter area contains small stones and artificial plants. Allow 2 min for acclimatization before remotely opening the trapdoor. Determine the latency for the test subject to emerge from the shelter. Terminate after 5 min if the fish does not leave the starting area and move the fish outside the container with a small aquarium dip net."];
+    Step2 [label="2. Close the trapdoor and let the fish explore the tank for 5 min before quantifying swimming activity. Count the number of squares crossed by the focal fish in the test arena (60 × 30 cm) within 5 min."];
+    Step3 [label="3. Remove a black cardboard divider to reveal a stimulus shoal in an adjacent tank (20 × 20 × 15 cm). The tank contains three stimulus fish, and physical and chemical contact is prevented, leaving only visual cues. Wait until the focal individual resumes swimming freely, then measure the time spent within a 10 cm association zone in front of the stimulus tank during a 5 min observation period as a measure of sociability/shoaling."];
+    
+    // Define edges to represent the flow of the protocol
+    Title -> Step1;
+    Step1 -> Step2;
+    Step2 -> Step3;
+}

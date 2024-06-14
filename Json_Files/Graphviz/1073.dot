@@ -1,0 +1,16 @@
+digraph AdsorbingVirusesProtocol {
+    // Define the title
+    Title [label="\"Adsorbing Viruses on TEM Grids\""];
+    
+    // Define steps
+    Step1 [label="1. On the same day as grid prep, use glow discharge to render grids hydrophilic."];
+    Step2 [label="2. Holding the grid in the tweezers, place 5 µL of viral lysate onto the shiny side of the grid (Figure 1)."];
+    Step3 [label="3. Let the sample sit for ~3 minutes to allow the viruses to adsorb to the grid."];
+    Step4 [label="4. Stain the viruses using the protocol \"linkPositive and Negative Staining of Viruses on TEM Grids\"."];
+    
+    // Define edges (sequence of steps)
+    Title -> Step1;
+    Step1 -> Step2;
+    Step2 -> Step3;
+    Step3 -> Step4;
+}

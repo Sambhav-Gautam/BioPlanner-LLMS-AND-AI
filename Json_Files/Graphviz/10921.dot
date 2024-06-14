@@ -1,0 +1,40 @@
+digraph HighMolecularWeightDNA {
+    // Define the title
+    Title [label="\"High Molecular Weight genomic DNA from coral sperm\""];
+    
+    // Define steps
+    Step1 [label="1. Grind frozen sperm to a fine powder in liquid nitrogen using a pre-cooled mortar and pestle."];
+    Step2 [label="2. Add 10mls of lysis buffer (10mM Tris pH 8; 100mM EDTA; 0.5% SDS) per gram of starting material to the frozen powder and mix."];
+    Step3 [label="3. Allow the mixture to thaw - mix gently with the pestle while thawing to ensure even dispersion of the tissue through the lysis buffer."];
+    Step4 [label="4. Place the thawed mixture in a 50 ml Falcon tube and add RNaseA (DNase-free) to 20 micrograms/ml"];
+    Step5 [label="5. Incubate at 37\u00b0C for 1 hour with periodic gentle mixing."];
+    Step6 [label="6. Add Proteinase K to a concentration of 100 micrograms/ml and incubate at 50\u00b0C for 3 hours with periodic gentle mixing."];
+    Step7 [label="7. Add an equal volume of phenol/chloroform/isoamyl alcohol (25:24:1) and gently rotate end over end for 10 minutes at room temperature."];
+    Step8 [label="8. Centrifuge at 5000g for 15 minutes at room temperature."];
+    Step9 [label="9. Transfer the aqueous phase to a fresh 50ml falcon tube."];
+    Step10 [label="10. Repeat the phenol/chloroform/isoamyl alcohol extraction twice and follow by an extraction using phenol/chloroform."];
+    Step11 [label="11. Precipitate the DNA by adding 1/9th volume 3M sodium acetate pH5.2 and 0.6 volumes of isopropanol."];
+    Step12 [label="12. Wash the DNA at least two times with 70% ethanol."];
+    Step13 [label="13. Air-dry the DNA."];
+    Step14 [label="14. Dissolve the DNA in 1XTE (or 0.1XTE if EDTA is a problem) and store at 4\u00b0C."];
+    Step15 [label="15. If necessary, pellet the DNA by centrifugation, wash with 70% ethanol, and air-dry."];
+    Step16 [label="16. Dialyze the aqueous phase extensively against 50mM Tris pH 8; 10mM EDTA, or 0.1XTE if EDTA is an issue, until OD 260/280 is >1.8."];
+
+    // Define edges (sequence of steps)
+    Title -> Step1;
+    Step1 -> Step2;
+    Step2 -> Step3;
+    Step3 -> Step4;
+    Step4 -> Step5;
+    Step5 -> Step6;
+    Step6 -> Step7;
+    Step7 -> Step8;
+    Step8 -> Step9;
+    Step9 -> Step10;
+    Step10 -> Step11;
+    Step11 -> Step12;
+    Step12 -> Step13;
+    Step13 -> Step14;
+    Step14 -> Step15;
+    Step15 -> Step16;
+}

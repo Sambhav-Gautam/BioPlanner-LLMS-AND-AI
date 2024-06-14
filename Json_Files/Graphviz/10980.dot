@@ -1,0 +1,40 @@
+digraph PolarityHybridChemicalTag_IHC {
+    // Define the title
+    Title [label="\"Polarity Hybrid Chemical Tag & IHC for Adult CNS\""];
+    
+    // Define steps
+    Step1 [label="1. Dissect: Dissect adult brains or CNS in cold Schneider\u2019s Insect Medium (S2)."];
+    Step2 [label="2. Fix: Transfer tissue to 2 mL Protein LoBind tubes filled with 2% paraformaldehyde (PFA) in S2 at RT. Fix for 55 minutes at RT while nutating."];
+    Step3 [label="3. Post-fix wash/permeabilization: Remove the fix and add 1.75 mL phosphate buffered saline with 0.5% Triton X-100 (PBT) and wash for 10-15 minute washes while nutating. Perform up to 3 additional washes if waiting to add chemical tag. Samples may be held in PBT for up to 7 hours prior to chemical tagging."];
+    Step4 [label="4. Chemical tag labeling: Remove PBT and add 200 µL 2 µM Cy2 Snap ligand in PBT per tube. Incubate for 15 minutes at RT on a rotator with tubes upright. Cy2 Snap ligand (2 µL/mL for final concentration of 2 µM)"];
+    Step5 [label="5. Post-chemical tag washes: Remove the chemical tag and do a brief rinse with 1.75 mL 0.5% PBT. Allow the tissue to settle to the bottom and then remove the rinse solution and add 1.75 mL 0.5% PBT. Wash for a total of 2 X 10-minute washes while nutating."];
+    Step6 [label="6. Block in GS: Remove PBT and add 200 µL of 5% GS in PBT per tube. Incubate for 1.5 hours at RT on a rotator with tubes upright."];
+    Step7 [label="7. Neuron primary antibodies: Remove block and add primary antibodies diluted in 5% GS in PBT for a volume of 200 µL per tube. Incubate for 4 hours at RT on a rotator with tubes upright. Then continue incubation at 4°C on a rotator with tubes upright for 2 overnights. Antibodies:\n- Rat α-FLAG Tag (1:100 or 10 µL/mL)\n- Rabbit α-HA Tag (1:600 or 1.67 µL/mL)"];
+    Step8 [label="8. Post-neuron primary washes: Remove the neuron primary antibodies and do a brief rinse with 1.75 mL 0.5% PBT. Allow the tissue to settle to the bottom and then remove the rinse solution and add 1.75 mL 0.5% PBT. Wash for a total of 3 X 30-minute washes while nutating (or 4 X 15 minutes)."];
+    Step9 [label="9. Neuron secondary antibodies: Remove the PBT and add the secondary antibodies diluted in 5% GS in PBT for a volume of 200 µL per tube. Incubate for 4 hours at RT on a rotator with tubes upright. Then continue incubation at 4°C on a rotator with tubes upright for 2-3 overnights. Antibodies:\n- ATTO 647N Goat α-Rat (1:150 or 6.6 µL/mL)\n- Cy3 Goat α-Rabbit (1:1000 or 1 µL/mL)"];
+    Step10 [label="10. Post-secondary washes: Remove the secondary antibodies and do a brief rinse with 1.75 mL 0.5% PBT. Allow the tissue to settle to the bottom and then remove the rinse solution and add 1.75 mL 0.5% PBT. Wash for a total of 3 X 30-minute washes while nutating (or 4 X 15 minutes). If needed, store tissue in 0.5% PBT at 4°C while nutating or lay tube flat and rotate."];
+    Step11 [label="11. Pre-embedding fixation: Remove PBT and add 1.75 mL 4% PFA in PBS at RT. Fix for 4 hours at RT while nutating."];
+    Step12 [label="12. Post-4% PFA washes: Remove the 4% PFA and do a brief rinse with 1.75 mL 0.5% PBT. Allow the tissue to settle to the bottom and then remove the rinse solution and add 1.75 mL 0.5% PBT. Wash for a total of 4 X 15-minute washes while nutating. If needed, store tissue in 0.5% PBT at 4°C while nutating or lay tube flat and rotate."];
+    Step13 [label="13. Mount: Mount the tissue on a poly-L-lysine (PLL) coated cover glass. For making PLL see FlyLight Recipe – Poly-L-Lysine."];
+    Step14 [label="14. Dehydrate: Move the cover glass through a series of 7 cover glass staining jars filled with increasing concentrations of ethanol (30%, 50%, 75%, 95%, 100%, 100%, 100%). Soak the cover glass for 10 minutes in each jar."];
+    Step15 [label="15. Xylene clearing: (IN THE HOOD). Move the cover glass through a series of 3 jars filled with xylene. Soak the cover glass for 5 minutes in each jar."];
+    Step16 [label="16. DPX embedding: Add 7 drops of dibutyl phthalate in xylene (DPX) on top of the tissue mounted on the cover glass. Place the cover glass (DPX down) on a prepared slide with spacers. Use the edge of a glass slide to gently press down on the center of the cover glass to seat the cover glass onto the slide. Let the slide dry in the hood for 2 days before viewing."];
+
+    // Define edges (sequence of steps)
+    Title -> Step1;
+    Step1 -> Step2;
+    Step2 -> Step3;
+    Step3 -> Step4;
+    Step4 -> Step5;
+    Step5 -> Step6;
+    Step6 -> Step7;
+    Step7 -> Step8;
+    Step8 -> Step9;
+    Step9 -> Step10;
+    Step10 -> Step11;
+    Step11 -> Step12;
+    Step12 -> Step13;
+    Step13 -> Step14;
+    Step14 -> Step15;
+    Step15 -> Step16;
+}

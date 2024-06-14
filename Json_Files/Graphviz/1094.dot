@@ -1,0 +1,18 @@
+digraph GlycerolStockProtocol {
+    // Define the title
+    Title [label="\"Glycerol Stock\""];
+    
+    // Define steps
+    Step1 [label="1. Add 600 uL of your inoculated liquid culture to a 2 mL screw top tube."];
+    Step2 [label="2. Add 200 uL autoclaved water to the screw top tube."];
+    Step3 [label="3. Add 200 uL glycerol to the screw top tube."];
+    Step4 [label="4. Screw the top on the tube and mix by inversion several times so no layers are present in the mixture."];
+    Step5 [label="5. Place mixed screw top tube into a -80°C Freezer."];
+
+    // Define edges (sequence of steps)
+    Title -> Step1;
+    Step1 -> Step2;
+    Step2 -> Step3;
+    Step3 -> Step4;
+    Step4 -> Step5;
+}

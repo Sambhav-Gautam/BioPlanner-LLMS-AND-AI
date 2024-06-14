@@ -1,0 +1,54 @@
+digraph NAQAssay {
+    // Define the title
+    Title [label="Measuring Nucleosome Assembly Activity in vitro with the Nucleosome Assembly and Quantification (NAQ) Assay"];
+    
+    // Define steps for the protocol
+    Step1 [label="1. Micrococcal Nuclease digestion and DNA purification"];
+    Step2 [label="2. Take 25 µl of the nucleosome assembly reaction and mix with 10 µl of 10x MNase buffer, 1 µl 100x BSA, 1 µl of MNase (stock at 25 U/µl) and 63 µl of water."];
+    Step3 [label="3. Incubate for 10 min in a thermoblock at 37°C"];
+    Step4 [label="4. Quench the reaction by adding 10 µl of 500 mM EDTA (final EDTA concentration ~50 mM)."];
+    Step5 [label="5. Optional: Treat the sample with 25 µg of Proteinase K (1.25 µl of a 20 mg/ml solution) for 20 min at 50°C."];
+    Step6 [label="6. Add 550 µl of PB buffer from MinElute kit (QIAGEN) and 10 µl of 3 M Na acetate pH 5.0 solution."];
+    Step7 [label="7. Incubate for 10 min at room temperature."];
+    Step8 [label="8. Add 50 ng of loading control DNA (stock at 25 ng/µl)."];
+    Step9 [label="9. Apply sample to the spin column."];
+    Step10 [label="10. Centrifuge for 1 min at 16,000 x g at room temperature."];
+    Step11 [label="11. Discard flow-through."];
+    Step12 [label="12. Wash membrane with 100 µl of PB buffer."];
+    Step13 [label="13. Centrifuge for 1 min at 16,000 x g at room temperature."];
+    Step14 [label="14. Discard flow-through."];
+    Step15 [label="15. Wash membrane with 700 µl of PE buffer."];
+    Step16 [label="16. Centrifuge for 1 min at 16,000 x g at room temperature."];
+    Step17 [label="17. Discard flow-through."];
+    Step18 [label="18. Centrifuge for 1 min at 16,000 x g at room temperature."];
+    Step19 [label="19. Discard flow-through."];
+    Step20 [label="20. Apply 10 µl of ddH2O to the spin column (make sure the tip of the pipette is in the center of the membrane)."];
+    Step21 [label="21. Incubate for 10 min at room temperature."];
+    Step22 [label="22. Place spin column into a clean Eppendorf tube."];
+    Step23 [label="23. Centrifuge for 1 min at 16,000 x g at room temperature."];
+    
+    // Define edges to represent the flow of the protocol
+    Title -> Step1;
+    Step1 -> Step2;
+    Step2 -> Step3;
+    Step3 -> Step4;
+    Step4 -> Step5;
+    Step5 -> Step6;
+    Step6 -> Step7;
+    Step7 -> Step8;
+    Step8 -> Step9;
+    Step9 -> Step10;
+    Step10 -> Step11;
+    Step11 -> Step12;
+    Step12 -> Step13;
+    Step13 -> Step14;
+    Step14 -> Step15;
+    Step15 -> Step16;
+    Step16 -> Step17;
+    Step17 -> Step18;
+    Step18 -> Step19;
+    Step19 -> Step20;
+    Step20 -> Step21;
+    Step21 -> Step22;
+    Step22 -> Step23;
+}

@@ -1,0 +1,28 @@
+digraph UnthawingRAW2647Cells {
+    // Define the title
+    Title [label="\"Unthawing RAW264.7 cells\""];
+    
+    // Define steps
+    Step1 [label="1. Pre-warm Complete Media in 37°C water bath or in the CO2 incubator (space permitting)"];
+    Step2 [label="2. Thaw the vial. Gentle agitation in a 37°C water bath. Check the label to ensure you have the correct cell line. Avoid getting the vial wet to avoid contamination."];
+    Step3 [label="3. Decontaminate vial by spraying with 70% ethanol."];
+    Step4 [label="4. Transfer Cells. In the hood: Use a micropipette (with sterile tip) to transfer cell suspension to sterile 15mL tube containing 15mL pre-warmed complete DMEM."];
+    Step5 [label="5. Centrifuge Cells. Spin cells at 200-300x g (a.k.a. RCF) for 5 minutes. Make sure the centrifuge is balanced."];
+    Step6 [label="6. Remove supernatant. Decant into a beaker in the laminar flow hood. Resuspend cells in 1mL Complete DMEM."];
+    Step7 [label="7. Transfer the vial contents to a flask. Use a serological pipette to transfer the resuspended cells to a flask containing 5mL Complete Media (T25) or 15mL Complete Media (T75)"];
+    Step8 [label="8. Inspect cell density and viability under the inverted microscope."];
+    Step9 [label="9. Place culture in 37°C 5% CO2 incubator."];
+    Step10 [label="10. Slightly loosen cap of flask to allow gas exchange."];
+
+    // Define edges (sequence of steps)
+    Title -> Step1;
+    Step1 -> Step2;
+    Step2 -> Step3;
+    Step3 -> Step4;
+    Step4 -> Step5;
+    Step5 -> Step6;
+    Step6 -> Step7;
+    Step7 -> Step8;
+    Step8 -> Step9;
+    Step9 -> Step10;
+}

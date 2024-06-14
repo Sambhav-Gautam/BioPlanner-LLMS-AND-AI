@@ -1,0 +1,38 @@
+digraph RNAExtractionProtocol {
+    // Define the title
+    Title [label="\"RNA extraction from the pennate diatom Asterionella formosa\""];
+    
+    // Define steps
+    Step1 [label="1. This protocol requires 90% ethanol kept at -20\u00b0C. All the equipment (pipetman, bench....) has to be decontaminated with a RNAse AWAY solution. The tips and tubes have to be RNAse free. Wear gloves during all the procedure."];
+    Step2 [label="2. Grow 1L of Asterionella formosa culture to an optical density at 600nm (OD600) of 0.12."];
+    Step3 [label="3. Harvest the cells by centrifugation at 3,200g at 16\u00b0C in a swinging rotor for 15 min. Discard the supernatant. Proceed with the pellet."];
+    Step4 [label="4. Add 4 mL of TRIzol Reagent to the harvested cells (roughly 360 mg)."];
+    Step5 [label="5. Incubate at room temperature for 5 min."];
+    Step6 [label="6. Split the 4 mL samples into 4 samples of 1 mL each in Eppendorf tubes."];
+    Step7 [label="7. Add 200 \u03bcL of chloroform to each sample and shake vigorously."];
+    Step8 [label="8. Incubate at room temperature for 10 min."];
+    Step9 [label="9. Centrifuge for 15 min at 4\u00b0C at maximal speed in a benchtop microcentrifuge."];
+    Step10 [label="10. Collect the aqueous phase from each tube using a needle syringe (top phase, about 0.6 mL per tube) and split into aliquots of 200 \u03bcL each."];
+    Step11 [label="11. Add 375 \u03bcL of RNA dilution buffer (blue solution) to each aliquot and gently mix by shaking."];
+    Step12 [label="12. Centrifuge for 10 min at maximal speed in a benchtop microcentrifuge at 4\u00b0C."];
+    Step13 [label="13. Collect the supernatant, which should be about 500 \u03bcl per tube. A blue pellet may sometimes be present."];
+    Step14 [label="14. Add 250 \u03bcL of 90% ethanol kept at -20\u00b0C to each supernatant sample (of ~500 \u03bcL) from the previous step."];
+    Step15 [label="15. Continue from step 7 of the SV Total RNA Isolation System Protocol."];
+    
+    // Define edges (sequence of steps)
+    Title -> Step1;
+    Step1 -> Step2;
+    Step2 -> Step3;
+    Step3 -> Step4;
+    Step4 -> Step5;
+    Step5 -> Step6;
+    Step6 -> Step7;
+    Step7 -> Step8;
+    Step8 -> Step9;
+    Step9 -> Step10;
+    Step10 -> Step11;
+    Step11 -> Step12;
+    Step12 -> Step13;
+    Step13 -> Step14;
+    Step14 -> Step15;
+}

@@ -1,0 +1,40 @@
+digraph VSMCIsolationProtocol {
+    // Define the title
+    Title [label="\"Vascular smooth muscle cell (VSMC) isolation from mouse aorta\""];
+    
+    // Define steps
+    Step1 [label="1. Sacrifice mouse (10-week old, Balb/c) with an overdose intraperitoneal injection of sodium pentobarbital."];
+    Step2 [label="2. Dip the mouse into a beaker filled with 70% ethanol, fix into an operation tray, bring into laminar air flow."];
+    Step3 [label="3. With sterilized surgical instruments, open the mouse, dissect the thoracic aorta."];
+    Step4 [label="4. Wash the aorta in Hank's balanced salt solution (HBSS)."];
+    Step5 [label="5. Keep the aorta in a dish on ice, remove the connective tissue and the adventitia."];
+    Step6 [label="6. Transfer into a new dish with fresh HBSS."];
+    Step7 [label="7. Cut open the aorta longitudinally, remove the endothelial layers by gentle scrape with a sterile cotton swab."];
+    Step8 [label="8. Cut the aorta into 4 pieces (around 4 mm2 each), wash in Dulbecco’s modified Eagle’s medium/Ham’s F12 (DMEM/F12) (Gibco)."];
+    Step9 [label="9. Transfer the aorta pieces into a collagen-coated culture dish (35 mm), press with the luminal side down on the dish."];
+    Step10 [label="10. Incubate for 5 min at 37°C, 5% CO2 in a tilting position."];
+    Step11 [label="11. Check and make sure the media explant attached to the dish. Prolonged the incubation for another 1-3 minutes if necessary."];
+    Step12 [label="12. Very slowly add fresh medium supplemented with 20% fetal bovine serum (FBS) and antibiotics to just cover the aorta."];
+    Step13 [label="13. Place the dish in the incubator and left undisturbed for 4 days."];
+    Step14 [label="14. At day 5, add fresh medium and change every 3 days. Observe the migrated cells under a microscope."];
+    Step15 [label="15. When migrated cells are confluent, harvest with trypsinization."];
+    Step16 [label="16. Count and pool cells from media explants from 3 mice into one dish (0.5-1x10^5 cells/35 mm dish), culture in 10% FBS/DMEM/F12."];
+
+    // Define edges (sequence of steps)
+    Title -> Step1;
+    Step1 -> Step2;
+    Step2 -> Step3;
+    Step3 -> Step4;
+    Step4 -> Step5;
+    Step5 -> Step6;
+    Step6 -> Step7;
+    Step7 -> Step8;
+    Step8 -> Step9;
+    Step9 -> Step10;
+    Step10 -> Step11;
+    Step11 -> Step12;
+    Step12 -> Step13;
+    Step13 -> Step14;
+    Step14 -> Step15;
+    Step15 -> Step16;
+}

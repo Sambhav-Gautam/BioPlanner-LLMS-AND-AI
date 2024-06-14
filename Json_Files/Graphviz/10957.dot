@@ -1,0 +1,34 @@
+digraph LoessSoilWaterMedium {
+    // Define the title
+    Title [label="\"Loess Soil-Water Medium Concentrate (Stock Solution) for use with RO/DI ONLY\""];
+    
+    // Define steps
+    Step1 [label="1. Place approximately 1 liter, by volume, of the air dried, sifted soil in a 2 liter flask. (Save any extra soil, bagged, in the -20 freezer for later use.)"];
+    Step2 [label="2. Add RO/DI water to the 2000mL mark on the flask."];
+    Step3 [label="3. On a hot plate in the fume hood, heat 2 liter flask until water temperature is 90°C."];
+    Step4 [label="4. Maintain at 90°C for 30 minutes. BEWARE of over boiling! it makes a potentially dangerous (burn/slip/fall hazard) mess that is difficult to clean up!"];
+    Step5 [label="5. Remove from heat, and allow to cool and settle, covered with aluminum foil, overnight. Ensure proper labeling is used!"];
+    Step6 [label="6. Once cooled and settled overnight, CAREFULLY decant the clear liquid from the flask into four (4) 200mL high speed centrifuge jars. Save any left over liquid for later! (Remaining soil sludge can be added to compost, returned outside, or thrown away.)"];
+    Step7 [label="7. Centrifuge all four jars at 1000G for 30 minutes."];
+    Step8 [label="8. Carefully decant the yellowish, transparent liquid from the jars into a 0.80 micron Naglene sterilization filter and vacuum filtrate. Use additional filters as needed. (Remaining sludge should be disposed of as described previously.)"];
+    Step9 [label="9. Resulting yellowish transparent liquid (approx 500mL) is then autoclaved at 125°C @ 20 PSI for 15 minutes in a 500mL media bottle."];
+    Step10 [label="10. Once cooled, sealed bottle may be stored, refrigerated, for 1 year shelf life. Ensure proper labeling and expiration date is on bottle."];
+    Step11 [label="11. Generally speaking, 20mL of this concentrate is added to 980mL of RO/DI H2O to make 1L of Soil-Water Media. Most suitable for filamentous algae and volvox. Addition of garden green pea concentrate allows euglenoid culture."];
+    Step12 [label="12. Record stock solution and expiration date in Quartzy inventory under \"Solutions\". Vendor: BU Labs In House"];
+    Step13 [label="13. Thoroughly rinse all soil particles from labware BEFORE placing in glassware washer!"];
+
+    // Define edges (sequence of steps)
+    Title -> Step1;
+    Step1 -> Step2;
+    Step2 -> Step3;
+    Step3 -> Step4;
+    Step4 -> Step5;
+    Step5 -> Step6;
+    Step6 -> Step7;
+    Step7 -> Step8;
+    Step8 -> Step9;
+    Step9 -> Step10;
+    Step10 -> Step11;
+    Step11 -> Step12;
+    Step12 -> Step13;
+}

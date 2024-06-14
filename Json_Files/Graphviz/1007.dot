@@ -1,0 +1,46 @@
+digraph WetMountMethod {
+    // Define the title
+    Title [label="Wet-mount Method for Enumeration of Aquatic Viruses"];
+    
+    // Define steps for Optional Viral Concentration Method
+    Step1 [label="1. Place 1 mL of sample into a 1.5 mL microcentrifuge tube."];
+    Step2 [label="2. Add 1 µL Iron Chloride Solution and vortex to mix.\nNote: Removing all of the supernatant is not critical, as a tiny bit remaining will not affect results."];
+    Step3 [label="3. Centrifuge the sample at ~14K RCF for 20 minutes."];
+    Step4 [label="4. Remove supernatant using a pipette, leaving a small, undisturbed pellet of Fe oxyhydroxides behind."];
+    Step5 [label="5. Dissolve the pellet in 10 µL of Ascorbic-EDTA Buffer, creating a 100-fold concentration of the original sample.\nNote: A larger volume of buffer may be used to speed pellet dissolution or decrease concentration factor."];
+    Step6 [label="6. Vortex and then pipette up and down to ensure complete dissolution."];
+
+    // Define steps for Virus Counting Procedure
+    Step7 [label="7. Combine 10 µL sample (concentrated or unconcentrated) and 2 µL SYBR Gold Working Stock, vortex to mix, and place in dark for 15 minutes."];
+    Step8 [label="8. If sample is unconcentrated, add 1 µL of Ascorbic Acid Antifade Solution."];
+    Step9 [label="9. Add 5 µL of glycerol to stained sample and vortex to mix."];
+    Step10 [label="10. Add 2 µL Working Bead Solution to sample.\nNote: The Working Bead Solution must be thoroughly mixed by vortexing prior to adding it to the sample."];
+    Step11 [label="11. Clean glass slides and cover slips with isopropanol and Kimwipes."];
+    Step12 [label="12. Thoroughly mix the sample/bead mixture by pipetting up and down, then immediately pipette 10 µL of it onto a glass microscope slide."];
+    Step13 [label="13. Place a coverslip over the mixture and avoid trapping air under the coverslip."];
+    Step14 [label="14. View viruses under ~495 nm excitation at 1000X magnification using an epifluorescence microscope. Count the number of viruses in one defined field of view."];
+    Step15 [label="15. Once complete, switch off the excitation and turn on the white light of the microscope to count the beads in the same field of view."];
+    Step16 [label="16. Repeat Step 14 & 15 by counting viruses and beads in multiple fields until at least 100 of each have been counted."];
+    Step17 [label="17. The concentration of viruses can then be determined with the following equation:\n cvirus = (nvirus/nbeads) * (vbeads/vsample) * cbeads \nwhere:\n cvirus = concentration of viruses (viruses ml^-1)\n nvirus = total number of viruses counted in all fields\n nbeads = total number of beads counted in all fields\n vbeads = volume of Working Bead Solution added\n vsample = volume of sample used\n cbeads = concentration of beads in Working Bead Solution (beads ml^-1)"];
+    Step18 [label="18. Prepared samples can be stored at -20ºC either in the microcentrifuge tube or after mounted on slides with no significant change in the calculated virus concentration.\nNote: These storage conditions have currently been validated for a time period of 7 days."];
+
+    // Define edges to represent the flow of the protocol
+    Title -> Step1;
+    Step1 -> Step2;
+    Step2 -> Step3;
+    Step3 -> Step4;
+    Step4 -> Step5;
+    Step5 -> Step6;
+    Step6 -> Step7;
+    Step7 -> Step8;
+    Step8 -> Step9;
+    Step9 -> Step10;
+    Step10 -> Step11;
+    Step11 -> Step12;
+    Step12 -> Step13;
+    Step13 -> Step14;
+    Step14 -> Step15;
+    Step15 -> Step16;
+    Step16 -> Step17;
+    Step17 -> Step18;
+}

@@ -1,0 +1,24 @@
+digraph HeatShockTransformationProtocol {
+    // Define the title
+    Title [label="\"Heat Shock Transformation\""];
+    
+    // Define steps
+    Step1 [label="1. Thaw desired E. coli strain on ice for ~10 minutes."];
+    Step2 [label="2. Add 5 uL of ligated DNA or ~10 ng of miniprepped plasmid DNA to 50 uL of E. coli cells. Incubate on ice for 20-30 minutes."];
+    Step3 [label="3. Incubate bacteria for 45 seconds at 42\u00b0C."];
+    Step4 [label="4. After heat shock, let rest on ice for 10 minutes."];
+    Step5 [label="5. Add 250 uL LB Broth to E. coli solution."];
+    Step6 [label="6. Incubate, shaking, at 37\u00b0C for 1 hour."];
+    Step7 [label="7. After 1 hour, plate bacteria onto LB Agar+antibiotic plates, spreading solution evenly."];
+    Step8 [label="8. Incubate for 18-24 hours at 37\u00b0C."];
+    
+    // Define edges (sequence of steps)
+    Title -> Step1;
+    Step1 -> Step2;
+    Step2 -> Step3;
+    Step3 -> Step4;
+    Step4 -> Step5;
+    Step5 -> Step6;
+    Step6 -> Step7;
+    Step7 -> Step8;
+}

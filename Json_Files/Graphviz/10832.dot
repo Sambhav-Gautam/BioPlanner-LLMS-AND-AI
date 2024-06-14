@@ -1,0 +1,32 @@
+digraph ChloroplastTransformationProtocol {
+    // Define the title
+    Title [label="\"Chloroplast transformation of the liverwort Marchantia polymorpha\""];
+    
+    // Define steps
+    Step1 [label="1. Collect intact sporangia in sterile dH2O in an eppendorf tube. Surface sterilise the sporangia using 1 % sodium dichloroisocyanurate (NaDCC), rinse three times with 1 ml sterile dH2O, remove water. Add 100 ul sterile dH2O per sporangium. Surface sterilised sporangiums can be stored at 4 \u00b0C for several months."];
+    Step2 [label="2. Break the sporangia open, resuspend spores by pipetting. Place 100 ul of spore suspension on the center of a sterile cellophane disc on a plate containing modified Johnson’s agar medium. Make 5-7 plates per construct."];
+    Step3 [label="3. Germinate spores on plates for 7 days under continuous light (50-60 umol photons m-2 s-1) at 21 \u00b0C."];
+    Step4 [label="4. Suspend 0.6 um diameter gold microprojectiles (Bio-Rad) in 100 % ethanol to obtain concentration of 20 ug/ul (can make aliquots and store in -30 \u00b0C)."];
+    Step5 [label="5. Centrifuge the gold particle suspension (20 ug/ul) at 6,000 g for 1 min. Discard supernatant."];
+    Step6 [label="6. Add 1 ml sterile water to the pellet and vortex thoroughly. Centrifuge at 2,000 g for 3 min and discard supernatant."];
+    Step7 [label="7. Add 320 ul sterile water to the pellet and vortex thoroughly. While vortexing, add 350 ul of 2.5 M CaCl2, 35-40 ul of 1 ug/ul vector DNA solution and 70 ul of 0.1 M spermidine. Incubate on ice for 10 minutes with vigorous mixing once per minute for 10 s."];
+    Step8 [label="8. Quick spin at a small table top centrifuge for few seconds. Discard supernatant. Add 500 ul ethanol to the pellet and vortex thoroughly. Repeat steps 10-12. Resuspend gold particles into 80 ul ethanol."];
+    Step9 [label="9. Sterilise macrocarriers with 100 % ethanol and air-dry under flow hood prior to use. Use a 7 ul aliquot of gold microprojectile suspension for each bombardment."];
+    Step10 [label="10. Bombard sheets of 7 day old spores using a biolistic delivery system (PDS-1000/He, Bio-Rad) under a vacuum of 28 in Hg with a rupture disk of 900 psi or 1,100 psi. Keep plates overnight in continuous light (50-60 umol photons m-2 s-1) at 21 \u00b0C."];
+    Step11 [label="11. Add sterile dH2O onto each plate, use a sterile spreader to divide the spores onto agar plates containing modified Johnson’s media without sucrose and 500 mg/l spectinomycin. Screen for green spectinomycin resistant plants after 3-4 weeks."];
+    Step12 [label="12. Successively subculture to obtain homoplasmic lines. Confirm by PCR after about three months."];
+    
+    // Define edges (sequence of steps)
+    Title -> Step1;
+    Step1 -> Step2;
+    Step2 -> Step3;
+    Step3 -> Step4;
+    Step4 -> Step5;
+    Step5 -> Step6;
+    Step6 -> Step7;
+    Step7 -> Step8;
+    Step8 -> Step9;
+    Step9 -> Step10;
+    Step10 -> Step11;
+    Step11 -> Step12;
+}

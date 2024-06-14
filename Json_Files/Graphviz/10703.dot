@@ -1,0 +1,32 @@
+digraph CellCultureTransfectionProtocol {
+    // Define the title
+    Title [label="\"Cell Culture Transfection of HEK293 with cDNA and/or siRNA\""];
+    
+    // Define steps
+    Step1 [label="1. One day prior to transfection, plate cells at a concentration of 500,000 cells per mL in a 12-well plate."];
+    Step2 [label="2. Modify the transfection spreadsheet (attached) to calculate how much cDNA/siRNA is needed for experimental conditions. Include negative controls for the total amount of DNA or siRNA added."];
+    Step3 [label="3. Sterilize the biosafety cabinet with 10% bleach for 20 minutes. Spray down the biosafety cabinet with 70% ethanol and use UV light for 15 minutes as a secondary decontaminant."];
+    Step4 [label="4. One hour prior to transfection, aspirate all media from plated cells with a sterile glass pipette. Replace with 800 µL fresh warm complete DMEM."];
+    Step5 [label="5. According to the transfection spreadsheet, label master mixes in 1.5 mL microcentrifuge tubes for each triplicate condition. Add Opti-Mem to the master mix tubes."];
+    Step6 [label="6. Double-check that concentrations of cDNA/siRNA match the transfection spreadsheet. Mix thoroughly and add cDNA/siRNA to the Opti-Mem master mix tubes."];
+    Step7 [label="7. Prepare lipofectamine master mix by adding lipofectamine to Opti-Mem, mixing well, and letting the solution sit for 5 minutes."];
+    Step8 [label="8. Add diluted lipofectamine to cDNA/siRNA at a 1:1 ratio. Mix well and let the solution sit for at least 20 minutes."];
+    Step9 [label="9. Label wells in triplicate on the plated cells for each treatment. Mix Lipofectamine + Master Mix solution thoroughly and add 200 µL of each mix dropwise to respective wells."];
+    Step10 [label="10. Mix the media gently by shaking and return cells to the incubator at 37°C and 5% CO2 for incubation."];
+    Step11 [label="11. The next day, aspirate old media from three wells at a time and add 1 mL of warm complete DMEM media."];
+    Step12 [label="12. On the following day, plan for cell lysis, protein assay, and gel sample preparation."];
+    
+    // Define edges (sequence of steps)
+    Title -> Step1;
+    Step1 -> Step2;
+    Step2 -> Step3;
+    Step3 -> Step4;
+    Step4 -> Step5;
+    Step5 -> Step6;
+    Step6 -> Step7;
+    Step7 -> Step8;
+    Step8 -> Step9;
+    Step9 -> Step10;
+    Step10 -> Step11;
+    Step11 -> Step12;
+}

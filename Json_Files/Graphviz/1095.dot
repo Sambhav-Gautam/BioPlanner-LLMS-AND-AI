@@ -1,0 +1,36 @@
+digraph YESRichMediumProtocol {
+    // Define the title
+    Title [label="\"YES Rich Medium\""];
+    
+    // Define steps
+    Step1 [label="1. Add 5.0 g Yeast Extract to a 1 Liter Erlenmeyer Flask."];
+    Step2 [label="2. Add 30 g Glucose or Dextrose to the flask."];
+    Step3 [label="3. Add 0.25 g Adenine to the flask."];
+    Step4 [label="4. Add 0.25 g Uracil to the flask."];
+    Step5 [label="5. Add 0.25 g Histidine to the flask."];
+    Step6 [label="6. Add 0.25 g Leucine to the flask."];
+    Step7 [label="7. Add 0.25 g Lysine to the flask."];
+    Step8 [label="8. Add 1 g Arginine to the flask."];
+    Step9 [label="9. Optional: For solid medium add 20 g Difco Bacto Agar to the flask."];
+    Step10 [label="10. Fill the flask with water up to the 1 Liter mark on the flask."];
+    Step11 [label="11. Place a magnetic stir bar into the flask and place the flask on a magnetic stirrer to dissolve the powder into the water."];
+    Step12 [label="12. Remove the stir bar with a magnetic rod."];
+    Step13 [label="13. Place aluminum foil over the top of the flask and then autoclave on a liquid cycle for 20 minutes."];
+    Step14 [label="14. If solid medium, pour while still hot into plates and let them sit out to cool overnight on the lab bench.\nIf liquid medium, aliquot into smaller amounts and store at +4°C."];
+
+    // Define edges (sequence of steps)
+    Title -> Step1;
+    Step1 -> Step2;
+    Step2 -> Step3;
+    Step3 -> Step4;
+    Step4 -> Step5;
+    Step5 -> Step6;
+    Step6 -> Step7;
+    Step7 -> Step8;
+    Step8 -> Step9;
+    Step9 -> Step10;
+    Step10 -> Step11;
+    Step11 -> Step12;
+    Step12 -> Step13;
+    Step13 -> Step14;
+}

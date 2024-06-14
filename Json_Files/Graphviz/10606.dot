@@ -1,0 +1,20 @@
+digraph AlleleDetectionProtocol {
+    // Define the title
+    Title [label="Detection of allele frequencies in the cDNA sample"];
+    
+    // Define steps
+    Step1 [label="1. Reverse transcription of total RNA\nReverse transcript total RNA to cDNA"];
+    Step2 [label="2. Primer design\nDesign PCR primers at conserved regions between alleles,\nand the amplified region includes target SNP site."];
+    Step3 [label="3. TaqMan probe design\nDesign two dye-labeled (FAM and VIC) TaqMan probes\nfor allele-specific detection."];
+    Step4 [label="4. Preparation of the digital PCR chip\nPrepare reaction mix (Digital PCR Master Mix,\nforward and reverse primers, TaqMan probes, diluted DNA, and water)\nand load onto digital PCR chip."];
+    Step5 [label="5. PCR\nPerform PCR with cycles:\n(1) 96°C, 10 min\n(2) 39 cycles of 56°C, 2 min and 98°C, 30 sec\n(3) 56°C, 2 min."];
+    Step6 [label="6. Detection of allele frequencies\nCount copy number of each allele\nby detecting fluorescence using QuantStudioTM 3D."];
+    
+    // Define edges (sequence of steps)
+    Title -> Step1;
+    Step1 -> Step2;
+    Step2 -> Step3;
+    Step3 -> Step4;
+    Step4 -> Step5;
+    Step5 -> Step6;
+}
